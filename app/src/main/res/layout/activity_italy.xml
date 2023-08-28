@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".italy"
+    android:orientation="vertical"
+    android:layout_weight="0"
+    android:weightSum="2">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgView2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/italy"
+        android:layout_below="@+id/imgView"/>
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imgView2">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/italy"
+                android:text="Italy"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/purple_500"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="          The Colosseum is the great oval amphitheater in the center of Rome where gladiators once fought for their life.\nThe largest amphitheater ever built, it was constructed \n from sand and stone over eight years, from AD72 to AD80. The colossal structure could hold 80,000 spectators, arranged in a circular ring around the central stage. Dramatic and sometimes horrifying events took place here, not just gladiatorial games, but also Classical plays, animal hunts and executions. Some say water was even pumped into the arena to enact mock sea battles. Partially damaged by earthquakes and stone robbers over the centuries, the Colosseum is still an iconic memento of Roman history, visited by thousands of tourists every year, so it stands to reason it would make the list of today’s seven wonders of the world."
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnItaly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Back"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</RelativeLayout>
